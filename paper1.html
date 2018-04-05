@@ -1,0 +1,115 @@
+<html>
+  <head>
+    <meta charvctk_set="UTF-8">
+    <title>TTS demos</title>
+  </head>
+  <body>
+    <div>
+      <h1> Demos for "Multi-task WaveNet: A Multi-task Generative Model for Statistical
+Parametric Speech Synthesis without Fundamental Frequency Conditions"</h1>
+<h2>
+ <b> Abstract </b>
+</h2>
+This paper introduces an improved generative model for statistical
+parametric speech synthesis (SPSS) based on WaveNet under
+a multi-task learning framework. Different from the original
+WaveNet model, the proposed Multi-task WaveNet employs
+the frame-level acoustic feature prediction as the secondary
+task and the external fundamental frequency prediction model
+for the original WaveNet can be removed. Therefore the improved
+WaveNet can generate high-quality speech waveforms
+only conditioned on linguistic features. Multi-task WaveNet can
+produce more natural and expressive speech by addressing the
+pitch prediction error accumulation issue and possesses more
+succinct inference procedures than the original WaveNet. Experimental
+results prove that the SPSS method proposed in this
+paper can achieve better performance than the state-of-the-art
+approach utilizing the original WaveNet in both objective and
+subjective preference tests.
+<h2>
+  Subjective evaluations
+</h2>
+<h3>
+<b>The following four speech synthesis systems were established
+for subjective preference tests.</b></h3>
+<table border="1" width="93%">
+	<tr>
+		<td width="140" align="center"><b>
+		<font face="Arial Unicode MS" size="3">System</font></i></td>
+		<td width="350" align="center"><b>
+		<font face="Arial Unicode MS" size="3">Descriptions</font></i></td>
+	</tr>
+	<tr>
+		<td width="140" align="center"><i><strong>
+		<font face="Arial Unicode MS" size="3">Concatenative</font></b></td></strong>
+		<td width="350"><font face="Arial Unicode MS" size="3">The HMM-driven unit selection concatenative
+      speech synthesis system.</font></td>
+		
+	</tr>
+	<tr>
+		<td width="140" align="center"><i><strong>
+		<font face="Arial Unicode MS" size="3">WaveNet</font></i></td></strong>
+		<td width="350"><font face="Arial Unicode MS" size="3">The original WaveNet SPSS system with F0s
+      and linguistic features as WaveNet conditions.</font></td>
+		
+	</tr>
+	<tr>
+		<td width="140" align="center"><i><strong>
+		<font face="Arial Unicode MS" size="3">WaveNet-lin</font></i></td></strong>
+		<td width="350"><font face="Arial Unicode MS" size="3">The original WaveNet SPSS system only
+      conditioned on linguistic features.</font></td>
+	</tr>
+	<tr>
+		<td width="140" align="center"><i><strong>
+		<font face="Arial Unicode MS" size="3">MTL-WaveNet</font></i></td></strong>
+		<td width="350"><font face="Arial Unicode MS" size="3">The proposed SPSS system using
+      Multi-task WaveNet.</font></td>
+	</tr>
+
+
+	</table>
+
+      <h3> </h3>
+      <table>
+        <tr><td></td><td class="transcript"><i>Corpus A</i>-utterance1</td></tr>
+        
+        <tr><td><i><b>Concatenative</b></i></td><td><audio controls><source src="vctk_set0/embedadapt_1sample.wav"></audio></td></tr>
+        <tr><td><i><b>WaveNet</b></i></td><td><audio controls><source src="vctk_set0/wholemodel_20sample.wav"></audio></td></tr>
+        <tr><td><i><b>WaveNet-lin</b></i></td><td><audio controls><source src="vctk_set0/wholemodel_50sample.wav"></audio></td></tr>
+        <tr><td><i><b>MTL-WaveNet</b></i></td><td><audio controls><source src="vctk_set0/wholemodel_100sample.wav"></audio></td></tr>
+      </table>
+    </div>
+
+  </body>
+</html>
+
+
+<html>
+  <head>
+    <meta charvctk_set="UTF-8">
+    <title>Audio demos</title>
+  </head>
+  <body>
+    <div>
+      <h3> </h3>
+      <table>
+        <tr><td></td><td class="transcript">Speaker 1 (female)</td></tr>
+        <tr><td>Original speech</td><td><audio controls><source src="vctk_set1/ground_truth.wav"></audio></td></tr>
+        <tr><td>Cloned speech (speaker embedding adaptation with 1 sample)</td><td><audio controls><source src="vctk_set1/embedadapt_1sample.wav"></audio></td></tr>
+        <tr><td>Cloned speech (speaker embedding adaptation with 5 samples)</td><td><audio controls><source src="vctk_set1/embedadapt_5sample.wav"></audio></td></tr>
+        <tr><td>Cloned speech (speaker embedding adaptation with 10 samples)</td><td><audio controls><source src="vctk_set1/embedadapt_10sample.wav"></audio></td></tr>
+        <tr><td>Cloned speech (speaker embedding adaptation with 20 samples)</td><td><audio controls><source src="vctk_set1/embedadapt_20sample.wav"></audio></td></tr>
+        <tr><td>Cloned speech (speaker embedding adaptation with 50 samples)</td><td><audio controls><source src="vctk_set1/embedadapt_50sample.wav"></audio></td></tr>
+        <tr><td>Cloned speech (speaker embedding adaptation with 100 samples)</td><td><audio controls><source src="vctk_set1/embedadapt_100sample.wav"></audio></td></tr>
+        <tr><td>Cloned speech (whole model adaptation with 1 sample)</td><td><audio controls><source src="vctk_set1/wholemodel_1sample.wav"></audio></td></tr>
+        <tr><td>Cloned speech (whole model adaptation with 5 samples)</td><td><audio controls><source src="vctk_set1/wholemodel_5sample.wav"></audio></td></tr>
+        <tr><td>Cloned speech (whole model adaptation with 10 samples)</td><td><audio controls><source src="vctk_set1/wholemodel_10sample.wav"></audio></td></tr>
+        <tr><td>Cloned speech (whole model adaptation with 20 samples)</td><td><audio controls><source src="vctk_set1/wholemodel_20sample.wav"></audio></td></tr>
+        <tr><td>Cloned speech (whole model adaptation with 50 samples)</td><td><audio controls><source src="vctk_set1/wholemodel_50sample.wav"></audio></td></tr>
+        <tr><td><b>Cloned speech (whole model adaptation with 100 samples)</b></td><td><audio controls><source src="vctk_set1/wholemodel_100sample.wav"></audio></td></tr>
+      </table>
+    </div>
+
+  </body>
+</html>
+
