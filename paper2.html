@@ -9,39 +9,121 @@
 <h2>
  <b> Abstract </b>
 </h2>
-We present EMPHASIS, an emotional phoneme-based acoustic
-model for speech synthesis system. EMPHASIS includes a
-phoneme duration prediction model and an acoustic parameter
-prediction model. We use CBHG-based regression network to
-model the dependencies between linguistic features and
-acoustic features. We modify the input and output layer
-structures of the network to improve the performance. For the
-linguistic input features, we apply a feature grouping strategy
-to enhance emotional and prosodic features. The acoustic
-parameters are designed to be suitable for the regression task
-and waveform reconstruction. EMPHASIS can synthesis
-speech in real-time and generates expressive interrogative and
-exclamatory speech with high audio quality. EMPHASIS is
-designed to be a multi-lingual model and can synthesis
-Mandarin-English speech for now. In the experiment of
-emotional speech synthesis, it achieves better subjective results
-than other real-time speech synthesis systems.
+We present EMPHASIS, an emotional phoneme-based acoustic model for speech synthesis system.
+EMPHASIS includes a phoneme duration prediction model and an acoustic parameter prediction model.
+It uses a CBHG-based regression network to model the dependencies between linguistic features and acoustic features.
+We modify the input and output layer structures of the network to improve the performance.
+For the linguistic features, we apply a feature grouping strategy to enhance emotional and prosodic features.
+The acoustic parameters are designed to be suitable for the regression task and waveform reconstruction.
+EMPHASIS can synthesize speech in real-time and generate expressive interrogative and exclamatory speech with high audio quality.
+EMPHASIS is designed to be a multi-lingual model and can synthesize Mandarin-English speech for now.
+In the experiment of emotional speech synthesis, it achieves better subjective results than other real-time speech synthesis systems.
+<h2>
+  Subjective evaluations
+</h2>
+<h3>
+<b>The following four speech synthesis systems were established
+for subjective preference tests in this paper.</b></h3>
+<table border="1" width="93%">
+	<tr>
+		<td width="140" align="center"><b>
+		<font face="Arial Unicode MS" size="3">System</font></i></td>
+		<td width="350" align="center"><b>
+		<font face="Arial Unicode MS" size="3">Descriptions</font></i></td>
+	</tr>
+	<tr>
+		<td width="140" align="center"><i><strong>
+        <font face="Arial Unicode MS" size="3">Bi-LSTM</font></i></td></strong>
+		<td width="350"><font face="Arial Unicode MS" size="3"> Stacked 2 FC layers and 2 bidirectional LSTM layers.</font></td>
+	</tr>
+	<tr>
+		<td width="140" align="center"><i><strong>
+		<font face="Arial Unicode MS" size="3">Tacotron</font></i></td></strong>
+		<td width="350"><font face="Arial Unicode MS" size="3"> Tacotron with Griffin-Lim reconstruction algorithm.</font></td>
+	</tr>
+	<tr>
+		<td width="140" align="center"><i><strong>
+		<font face="Arial Unicode MS" size="3">EMPHASIS</font></i></td></strong>
+		<td width="350"><font face="Arial Unicode MS" size="3"> The proposed model.</font></td>
+	</tr>
+	<tr>
+		<td width="140" align="center"><i><strong>
+		<font face="Arial Unicode MS" size="3">Concatenative</font></b></td></strong>
+		<td width="350"><font face="Arial Unicode MS" size="3">The HMM-driven unit selection concatenative
+      speech synthesis system.</font></td>
+		
+	</tr>
 
 	</table>
 
       <h3> <i>Demos</i></h3>
       <table>
-        
-        <tr><td><i><b>1 </b></i></td><td><audio controls><source src="paper2_demos/8.wav"></audio></td></tr>
-        <tr><td><i><b>2 </b></i></td><td><audio controls><source src="paper2_demos/0.wav"></audio></td></tr>
-        <tr><td><i><b>3 </b></i></td><td><audio controls><source src="paper2_demos/7.wav"></audio></td></tr>
-        <tr><td><i><b>4 </b></i></td><td><audio controls><source src="paper2_demos/13.wav"></audio></td></tr>
-        <tr><td><i><b>5 </b></i></td><td><audio controls><source src="paper2_demos/4.wav"></audio></td></tr>
-        <tr><td><i><b>6 </b></i></td><td><audio controls><source src="paper2_demos/9.wav"></audio></td></tr>
-        <tr><td><i><b>7 </b></i></td><td><audio controls><source src="paper2_demos/20.wav"></audio></td></tr>
-        <tr><td><i><b>8 </b></i></td><td><audio controls><source src="paper2_demos/5.wav"></audio></td></tr>
-        <tr><td><i><b>9 </b></i></td><td><audio controls><source src="paper2_demos/17.wav"></audio></td></tr>
-        <tr><td><i><b>10</b></i></td><td><audio controls><source src="paper2_demos/28.wav"></audio></td></tr>
+        <tr><td></td><td class="transcript" align="center">Utterance 1</td></tr>
+        <tr><td><i><b>Bi-LSTM </b></i></td><td><audio controls><source src="paper2_demos/bilstm/8.wav"></audio></td></tr>
+        <tr><td><i><b>Tacotron </b></i></td><td><audio controls><source src="paper2_demos/tacotron/8.wav"></audio></td></tr>
+        <tr><td><i><b>EMPHASIS </b></i></td><td><audio controls><source src="paper2_demos/emphasis/8.wav"></audio></td></tr>
+        <tr><td><i><b>Concatenative </b></i></td><td><audio controls><source src="paper2_demos/concatenative/8.wav"></audio></td></tr>
+      </table>
+      <table>
+        <tr><td></td><td class="transcript" align="center">Utterance 2</td></tr>
+        <tr><td><i><b>Bi-LSTM </b></i></td><td><audio controls><source src="paper2_demos/bilstm/0.wav"></audio></td></tr>
+        <tr><td><i><b>Tacotron </b></i></td><td><audio controls><source src="paper2_demos/tacotron/0.wav"></audio></td></tr>
+        <tr><td><i><b>EMPHASIS </b></i></td><td><audio controls><source src="paper2_demos/emphasis/0.wav"></audio></td></tr>
+        <tr><td><i><b>Concatenative </b></i></td><td><audio controls><source src="paper2_demos/concatenative/0.wav"></audio></td></tr>
+      </table>
+      <table>
+        <tr><td></td><td class="transcript" align="center">Utterance 3</td></tr>
+        <tr><td><i><b>Bi-LSTM </b></i></td><td><audio controls><source src="paper2_demos/bilstm/7.wav"></audio></td></tr>
+        <tr><td><i><b>Tacotron </b></i></td><td><audio controls><source src="paper2_demos/tacotron/7.wav"></audio></td></tr>
+        <tr><td><i><b>EMPHASIS </b></i></td><td><audio controls><source src="paper2_demos/emphasis/7.wav"></audio></td></tr>
+        <tr><td><i><b>Concatenative </b></i></td><td><audio controls><source src="paper2_demos/concatenative/7.wav"></audio></td></tr>
+      </table>
+      <table>
+        <tr><td></td><td class="transcript" align="center">Utterance 4</td></tr>
+        <tr><td><i><b>Bi-LSTM </b></i></td><td><audio controls><source src="paper2_demos/bilstm/13.wav"></audio></td></tr>
+        <tr><td><i><b>Tacotron </b></i></td><td><audio controls><source src="paper2_demos/tacotron/13.wav"></audio></td></tr>
+        <tr><td><i><b>EMPHASIS </b></i></td><td><audio controls><source src="paper2_demos/emphasis/13.wav"></audio></td></tr>
+        <tr><td><i><b>Concatenative </b></i></td><td><audio controls><source src="paper2_demos/concatenative/13.wav"></audio></td></tr>
+      </table>
+      <table>
+        <tr><td></td><td class="transcript" align="center">Utterance 5</td></tr>
+        <tr><td><i><b>Bi-LSTM </b></i></td><td><audio controls><source src="paper2_demos/bilstm/4.wav"></audio></td></tr>
+        <tr><td><i><b>Tacotron </b></i></td><td><audio controls><source src="paper2_demos/tacotron/4.wav"></audio></td></tr>
+        <tr><td><i><b>EMPHASIS </b></i></td><td><audio controls><source src="paper2_demos/emphasis/4.wav"></audio></td></tr>
+        <tr><td><i><b>Concatenative </b></i></td><td><audio controls><source src="paper2_demos/concatenative/4.wav"></audio></td></tr>
+      </table>
+      <table>
+        <tr><td></td><td class="transcript" align="center">Utterance 6</td></tr>
+        <tr><td><i><b>Bi-LSTM </b></i></td><td><audio controls><source src="paper2_demos/bilstm/9.wav"></audio></td></tr>
+        <tr><td><i><b>EMPHASIS </b></i></td><td><audio controls><source src="paper2_demos/emphasis/9.wav"></audio></td></tr>
+        <tr><td><i><b>Concatenative </b></i></td><td><audio controls><source src="paper2_demos/concatenative/9.wav"></audio></td></tr>
+      </table>
+      <table>
+        <tr><td></td><td class="transcript" align="center">Utterance 7</td></tr>
+        <tr><td><i><b>Bi-LSTM </b></i></td><td><audio controls><source src="paper2_demos/bilstm/20.wav"></audio></td></tr>
+        <tr><td><i><b>Tacotron </b></i></td><td><audio controls><source src="paper2_demos/tacotron/20.wav"></audio></td></tr>
+        <tr><td><i><b>EMPHASIS </b></i></td><td><audio controls><source src="paper2_demos/emphasis/20.wav"></audio></td></tr>
+        <tr><td><i><b>Concatenative </b></i></td><td><audio controls><source src="paper2_demos/concatenative/20.wav"></audio></td></tr>
+      </table>
+      <table>
+        <tr><td></td><td class="transcript" align="center">Utterance 8</td></tr>
+        <tr><td><i><b>Bi-LSTM </b></i></td><td><audio controls><source src="paper2_demos/bilstm/5.wav"></audio></td></tr>
+        <tr><td><i><b>Tacotron </b></i></td><td><audio controls><source src="paper2_demos/tacotron/5.wav"></audio></td></tr>
+        <tr><td><i><b>EMPHASIS </b></i></td><td><audio controls><source src="paper2_demos/emphasis/5.wav"></audio></td></tr>
+        <tr><td><i><b>Concatenative </b></i></td><td><audio controls><source src="paper2_demos/concatenative/5.wav"></audio></td></tr>
+      </table>
+      <table>
+        <tr><td></td><td class="transcript" align="center">Utterance 9</td></tr>
+        <tr><td><i><b>Bi-LSTM </b></i></td><td><audio controls><source src="paper2_demos/bilstm/17.wav"></audio></td></tr>
+        <tr><td><i><b>Tacotron </b></i></td><td><audio controls><source src="paper2_demos/tacotron/17.wav"></audio></td></tr>
+        <tr><td><i><b>EMPHASIS </b></i></td><td><audio controls><source src="paper2_demos/emphasis/17.wav"></audio></td></tr>
+        <tr><td><i><b>Concatenative </b></i></td><td><audio controls><source src="paper2_demos/concatenative/17.wav"></audio></td></tr>
+      </table>
+      <table>
+        <tr><td></td><td class="transcript" align="center">Utterance 10</td></tr>
+        <tr><td><i><b>Bi-LSTM </b></i></td><td><audio controls><source src="paper2_demos/bilstm/28.wav"></audio></td></tr>
+        <tr><td><i><b>EMPHASIS </b></i></td><td><audio controls><source src="paper2_demos/emphasis/28.wav"></audio></td></tr>
+        <tr><td><i><b>Concatenative </b></i></td><td><audio controls><source src="paper2_demos/concatenative/28.wav"></audio></td></tr>
       </table>
     </div>
 
