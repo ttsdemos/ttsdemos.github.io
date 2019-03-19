@@ -1,4 +1,7 @@
-*{ margin: 0px; padding: 0px; text-decoration: none; box-sizing: border-box; font-size: 1.4rem; font-weight: 400; font-style: normal; font-family: "微软雅黑"; text-size-adjust: 100%; }
+*{ margin: 0px; padding: 0px; text-decoration: none; box-sizing: border-box; font-family: 'Roboto', Arial, sans-serif; text-size-adjust: 100%; }
+p,div{
+    font-size: 16px; font-weight: 460; font-style: normal; 
+}
 
 ul, li { list-style: none; }
 
@@ -17,8 +20,12 @@ html,body{
     height: auto;
     /* padding: 10px; */
     box-sizing: border-box;
-    background: #fcfcfc;
     overflow-x: hidden;
+    padding: 4px;
+}
+b{
+    font-weight: 600;
+    font-size: 20px;
 }
 .topTitle{
     width: 100%;
@@ -32,27 +39,20 @@ html,body{
     height: auto;
 }
 h1{
-    font-size: 30px;
-    line-height: 42px;
-    font-weight: 600;
-    background: #fcfcfc;
+    font-size: 26px;
+    line-height:1.2;
 }
 h2{
     font-size: 26px;
     line-height: 42px;
-    font-weight: 500;
-    background: #fcfcfc;
 }
 h3{
     font-size: 20px;
     line-height: 38px;
-    font-weight: 400;
-    background: #fcfcfc;
 }
 h4{
     font-size: 16px;
     line-height: 38px;
-    background: #fcfcfc;
     margin-bottom: 10px;
 }
 .someAudio,.imageDiv{
