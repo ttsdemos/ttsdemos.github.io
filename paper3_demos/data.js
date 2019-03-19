@@ -1,0 +1,126 @@
+var a= [
+    {
+        "nameH1":"Single-reference",
+        "sonH1":[{
+            "nameH2":"Speaker",
+            "sonH2":[
+                {
+                    "nameH3":"Style transfer",
+                    "soanH3":[
+                        {
+                            "title":"比较org与proposed性能音频",
+                            "audioUrl":"speaker-style-transfer-1",
+                            "content":[
+                                {
+                                    "nameH4":"reference",
+                                    "audioName":["1.wav","2.wav","3.wav","4.wav"]
+                                },
+                                {
+                                    "nameH4":"no-pairwise",
+                                    "audioName":["1.wav","2.wav","3.wav","4.wav"]
+                                },
+                                {
+                                    "nameH4":"pairwise",
+                                    "audioName":["1_0.wav","2_0.wav","3_0.wav","4_0.wav"]
+                                }
+                            ]
+                        },
+                        {
+                            "title":"standard style transfer音频",
+                            "audioUrl":"speaker-style-transfer-2",
+                            "content":[
+                                {
+                                    "nameH4":"reference",
+                                    "audioName":["reference1.wav","reference2.wav","reference3.wav","reference4.wav"]
+                                },
+                                {
+                                    "nameH4":"reference1",
+                                    "audioName":["1.wav","2.wav","3.wav"]
+                                },
+                                {
+                                    "nameH4":"reference2",
+                                    "audioName":["1.wav","2.wav","3.wav"]
+                                },
+                                {
+                                    "nameH4":"reference3",
+                                    "audioName":["1.wav","2.wav","3.wav"]
+                                },
+                                {
+                                    "nameH4":"reference4",
+                                    "audioName":["1.wav","2.wav","3.wav"]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nameH3":"Style control",
+                    "soanH3":[
+                        {
+                            "title":"mel谱渐变gif",
+                            "audioUrl":"speaker-style-control-1",
+                            "content":[
+                            ]
+                        },
+                        {
+                            "title":"speaker1->…->speaker2渐变音频",
+                            "audioUrl":"speaker-style-control-2",
+                            "content":[
+                                {
+                                    "nameH4":"text1",
+                                    "audioName":["1.wav","2_0.wav","3_0.wav","4_0.wav","5.wav"]
+                                },
+                                {
+                                    "nameH4":"text2",
+                                    "audioName":["1.wav","2_0.wav","3_0.wav","4_0.wav","5.wav"]
+                                },
+                                {
+                                    "nameH4":"text3",
+                                    "audioName":["1.wav","2_0.wav","3_0.wav","4_0.wav","5.wav"]
+                                },
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nameH3":"Random sampling",
+                    "soanH3":[
+                        {
+                            "title":"随机音频",
+                            "audioUrl":"speaker-style-control-1",
+                            "content":[
+                            ]
+                        },
+                    ]
+                },
+                {
+                    "nameH3":"Few shot/one shot",
+                    "soanH3":[
+                        {
+                            "title":"One shot音频",
+                            "audioUrl":"speaker-style-control-1",
+                            "content":[
+                                {
+                                    "nameH4":"Success1  reference",
+                                    "audioName":["1.wav","2_0.wav","3_0.wav","4_0.wav","5.wav"]
+                                },
+                                {
+                                    "nameH4":"Success2  reference",
+                                    "audioName":["1.wav","2_0.wav","3_0.wav","4_0.wav","5.wav"]
+                                },
+                                {
+                                    "nameH4":"Fail1  reference",
+                                    "audioName":["1.wav","2_0.wav","3_0.wav","4_0.wav","5.wav"]
+                                },
+                                {
+                                    "nameH4":"Fail2  reference",
+                                    "audioName":["1.wav","2_0.wav","3_0.wav","4_0.wav","5.wav"]
+                                },
+                            ]
+                        },
+                    ]
+                }
+            ]
+        }]
+    }
+]

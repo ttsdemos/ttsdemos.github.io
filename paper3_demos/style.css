@@ -1,0 +1,114 @@
+*{ margin: 0px; padding: 0px; text-decoration: none; box-sizing: border-box; font-size: 1.4rem; font-weight: 400; font-style: normal; font-family: "微软雅黑"; text-size-adjust: 100%; }
+
+ul, li { list-style: none; }
+
+html { -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; font-size: 62.5%; }
+
+img, div, body, html, ul, li, a { -webkit-touch-callout: none; }
+
+input, button { outline: 0; }
+
+button { cursor: pointer; }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color:#ccc; } input{-webkit-appearance:none; border:0}
+
+html,body{
+    width: 100%;
+    height: auto;
+    /* padding: 10px; */
+    box-sizing: border-box;
+    background: #fcfcfc;
+    overflow-x: hidden;
+}
+.topTitle{
+    width: 100%;
+    height: auto;
+    padding: 8px;
+    border: 2px solid #333;
+}
+.wrap{
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+}
+h1{
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: 600;
+    background: #fcfcfc;
+}
+h2{
+    font-size: 26px;
+    line-height: 42px;
+    font-weight: 520;
+    background: #fcfcfc;
+}
+h3{
+    font-size: 20px;
+    line-height: 38px;
+    font-weight: 400;
+    background: #fcfcfc;
+}
+h4{
+    text-align: center;
+    font-size: 16px;
+    line-height: 38px;
+    background: #eee;
+    margin-bottom: 10px;
+}
+.someAudio,.imageDiv{
+    width: 100%;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+}
+.someAudio p,.imageDiv p{
+    /* float: left; */
+    width: auto;
+    font-size: 18px;
+    line-height: 40px;
+    padding-right: 10px;
+}
+.someAudio div{
+    /* float: right; */
+    flex: 1;
+    padding-right: 10px;
+    display: flex;
+}
+.someAudio div audio{
+    flex: 1;
+    width: 100%;
+    padding-left:4px;
+}
+.imageDiv img{
+    width: auto;
+    height:300px;
+}
+.someTab{
+    line-height: 1.8;
+}
+.someTab table{
+    display: inline-block;
+    text-align: center;
+}
+
+table th{
+    width: 100px;
+}
+table audio{
+    width: 240px;
+}
+
+.lineTab{position: relative;}
+.lineTab .hrline{
+    position: absolute;
+    left: -8px;
+    width: 82px;
+    transform: rotate(35deg);
+    color: #111;
+    transform-origin:center center;
+}
