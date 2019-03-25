@@ -25,13 +25,13 @@
 
     <div style="padding-top:16px;"><h2>Abstract</h2></div>
     <div style="padding-top:16px;">
-        This paper introduces a novel multi-references structure to Tacotron for multiple styles control.
-        We train this model by intercross training, a weakly supervised optimization method, so that each
-        sub-encoder of the multi-references encoder independently disentangles and controls a specific
-        style. With the proposed model, one can control speech styles in macroscopic and interpretable
-        ways such as linear interpolation between style representations in a continuous latent space.
-        Several experiments are conducted to show the proposed model's capability of style disentangling,
-        control and transfer, which is simple, intuitive and robust enough for industrial production.
+        Speech style control and transfer techniques aim to enrich the diversity and expressiveness of
+        synthesized speech. Existing approaches model all speech styles into one representation, lacking
+        the abilty to control a specific speech feature independently. To address this issue, we introduce
+        a novel multi-reference structure to Tacotron and propose intercross training approach, which together
+        ensure that each sub-encoder of the multi-reference encoder independently disentangles and controls
+        a specific style. Experimental results show that our model is able to control and transfer desired
+        speech styles individually.
     </div>
 
     <div style="padding-top:16px;"><h2>Introduction</h2></div>
@@ -542,91 +542,91 @@
             <tr>
                 <td><b>α <sub style="font-size:1px">2</sub> = 0.0</b></td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/parallel-gezi@radio-junhao@news/1_0.wav" controls></audio>
+                    <audio src="paper3_demos/multi-reference/parallel/1_0.wav" controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/parallel-gezi@radio-junhao@news/2_0.wav" controls></audio>
+                    <audio src="paper3_demos/multi-reference/parallel/2_0.wav" controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/parallel-gezi@radio-junhao@news/3_0.wav" controls></audio>
+                    <audio src="paper3_demos/multi-reference/parallel/3_0.wav" controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/parallel-gezi@radio-junhao@news/4_0.wav" controls></audio>
+                    <audio src="paper3_demos/multi-reference/parallel/4_0.wav" controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/parallel-gezi@radio-junhao@news/5_0.wav" controls></audio>
+                    <audio src="paper3_demos/multi-reference/parallel/5_0.wav" controls></audio>
                 </td>
             </tr>
             <tr>
                 <td><b>α <sub style="font-size:1px">2</sub> = 0.25</b></td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/parallel-gezi@radio-junhao@news/6_0.wav" controls></audio>
+                    <audio src="paper3_demos/multi-reference/parallel/6_0.wav" controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/parallel-gezi@radio-junhao@news/7_0.wav" controls></audio>
+                    <audio src="paper3_demos/multi-reference/parallel/7_0.wav" controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/parallel-gezi@radio-junhao@news/8_0.wav" controls></audio>
+                    <audio src="paper3_demos/multi-reference/parallel/8_0.wav" controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/parallel-gezi@radio-junhao@news/9_0.wav" controls></audio>
+                    <audio src="paper3_demos/multi-reference/parallel/9_0.wav" controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/parallel-gezi@radio-junhao@news/10_0.wav" controls></audio>
+                    <audio src="paper3_demos/multi-reference/parallel/10_0.wav" controls></audio>
                 </td>
             </tr>
             <tr>
                 <td><b>α <sub style="font-size:1px">2</sub> = 0.5</b></td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/parallel-gezi@radio-junhao@news/11_0.wav" controls></audio>
+                    <audio src="paper3_demos/multi-reference/parallel/11_0.wav" controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/parallel-gezi@radio-junhao@news/12_0.wav" controls></audio>
+                    <audio src="paper3_demos/multi-reference/parallel/12_0.wav" controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/parallel-gezi@radio-junhao@news/13_0.wav" controls></audio>
+                    <audio src="paper3_demos/multi-reference/parallel/13_0.wav" controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/parallel-gezi@radio-junhao@news/14_0.wav" controls></audio>
+                    <audio src="paper3_demos/multi-reference/parallel/14_0.wav" controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/parallel-gezi@radio-junhao@news/15_0.wav" controls></audio>
+                    <audio src="paper3_demos/multi-reference/parallel/15_0.wav" controls></audio>
                 </td>
             </tr>
             <tr>
                 <td><b>α <sub style="font-size:1px">2</sub> = 0.75</b></td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/parallel-gezi@radio-junhao@news/16_0.wav" controls></audio>
+                    <audio src="paper3_demos/multi-reference/parallel/16_0.wav" controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/parallel-gezi@radio-junhao@news/17_0.wav" controls></audio>
+                    <audio src="paper3_demos/multi-reference/parallel/17_0.wav" controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/parallel-gezi@radio-junhao@news/18_0.wav" controls></audio>
+                    <audio src="paper3_demos/multi-reference/parallel/18_0.wav" controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/parallel-gezi@radio-junhao@news/19_0.wav" controls></audio>
+                    <audio src="paper3_demos/multi-reference/parallel/19_0.wav" controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/parallel-gezi@radio-junhao@news/20_0.wav" controls></audio>
+                    <audio src="paper3_demos/multi-reference/parallel/20_0.wav" controls></audio>
                 </td>
             </tr>
             <tr>
                 <td><b>α <sub style="font-size:1px">2</sub> = 1.0</b></td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/parallel-gezi@radio-junhao@news/21_0.wav" controls></audio>
+                    <audio src="paper3_demos/multi-reference/parallel/21_0.wav" controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/parallel-gezi@radio-junhao@news/22_0.wav" controls></audio>
+                    <audio src="paper3_demos/multi-reference/parallel/22_0.wav" controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/parallel-gezi@radio-junhao@news/23_0.wav" controls></audio>
+                    <audio src="paper3_demos/multi-reference/parallel/23_0.wav" controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/parallel-gezi@radio-junhao@news/24_0.wav" controls></audio>
+                    <audio src="paper3_demos/multi-reference/parallel/24_0.wav" controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/parallel-gezi@radio-junhao@news/25_0.wav" controls></audio>
+                    <audio src="paper3_demos/multi-reference/parallel/25_0.wav" controls></audio>
                 </td>
             </tr>
         </Table>
@@ -656,115 +656,115 @@
             <tr>
                 <td><b>α <sub style="font-size:1px">2</sub> = 0.0</b></td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/1_0.wav"
+                    <audio src="paper3_demos/multi-reference/nonparallel/1_0.wav"
                            controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/2_0.wav"
+                    <audio src="paper3_demos/multi-reference/nonparallel/2_0.wav"
                            controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/3_0.wav"
+                    <audio src="paper3_demos/multi-reference/nonparallel/3_0.wav"
                            controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/4_0.wav"
+                    <audio src="paper3_demos/multi-reference/nonparallel/4_0.wav"
                            controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/5_0.wav"
+                    <audio src="paper3_demos/multi-reference/nonparallel/5_0.wav"
                            controls></audio>
                 </td>
             </tr>
             <tr>
                 <td><b>α <sub style="font-size:1px">2</sub> = 0.25</b></td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/6_0.wav"
+                    <audio src="paper3_demos/multi-reference/nonparallel/6_0.wav"
                            controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/7_0.wav"
+                    <audio src="paper3_demos/multi-reference/nonparallel/7_0.wav"
                            controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/8_0.wav"
+                    <audio src="paper3_demos/multi-reference/nonparallel/8_0.wav"
                            controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/9_0.wav"
+                    <audio src="paper3_demos/multi-reference/nonparallel/9_0.wav"
                            controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/10_0.wav"
+                    <audio src="paper3_demos/multi-reference/nonparallel/10_0.wav"
                            controls></audio>
                 </td>
             </tr>
             <tr>
                 <td><b>α <sub style="font-size:1px">2</sub> = 0.5</b></td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/11_0.wav"
+                    <audio src="paper3_demos/multi-reference/nonparallel/11_0.wav"
                            controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/12_0.wav"
+                    <audio src="paper3_demos/multi-reference/nonparallel/12_0.wav"
                            controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/13_0.wav"
+                    <audio src="paper3_demos/multi-reference/nonparallel/13_0.wav"
                            controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/14_0.wav"
+                    <audio src="paper3_demos/multi-reference/nonparallel/14_0.wav"
                            controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/15_0.wav"
+                    <audio src="paper3_demos/multi-reference/nonparallel/15_0.wav"
                            controls></audio>
                 </td>
             </tr>
             <tr>
                 <td><b>α <sub style="font-size:1px">2</sub> = 0.75</b></td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/16_0.wav"
+                    <audio src="paper3_demos/multi-reference/nonparallel/16_0.wav"
                            controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/17_0.wav"
+                    <audio src="paper3_demos/multi-reference/nonparallel/17_0.wav"
                            controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/18_0.wav"
+                    <audio src="paper3_demos/multi-reference/nonparallel/18_0.wav"
                            controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/19_0.wav"
+                    <audio src="paper3_demos/multi-reference/nonparallel/19_0.wav"
                            controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/20_0.wav"
+                    <audio src="paper3_demos/multi-reference/nonparallel/20_0.wav"
                            controls></audio>
                 </td>
             </tr>
             <tr>
                 <td><b>α <sub style="font-size:1px">2</sub> = 1.0</b></td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/21_0.wav"
+                    <audio src="paper3_demos/multi-reference/nonparallel/21_0.wav"
                            controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/22_0.wav"
+                    <audio src="paper3_demos/multi-reference/nonparallel/22_0.wav"
                            controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/23_0.wav"
+                    <audio src="paper3_demos/multi-reference/nonparallel/23_0.wav"
                            controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/24_0.wav"
+                    <audio src="paper3_demos/multi-reference/nonparallel/24_0.wav"
                            controls></audio>
                 </td>
                 <td>
-                    <audio src="paper3_demos/multi-reference/nonparallel-difeilong@poetry-lixuejiao@callcenter/25_0.wav"
+                    <audio src="paper3_demos/multi-reference/nonparallel/25_0.wav"
                            controls></audio>
                 </td>
             </tr>
@@ -782,6 +782,48 @@
     <h3 style="padding-top:16px;"><a name="Emotion">1 Emotion</a></h3>
     <h4 style="padding-top:16px;"><a name="Style_controlEE">1.1 Style control</a></h4>
     <h4 style="padding-top:16px;"><a name="Random_samplingEE">1.2 Random sampling</a></h4>
+    <div style="padding-top:16px;">
+        Similar to speaker random sampling, we conduct emotion random sampling and present demos here.
+    </div>
+    <Table style="padding-top:16px;">
+        <tr>
+            <th>
+                <audio src="paper3_demos/emotion-random/2.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/emotion-random/3.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/emotion-random/4.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/emotion-random/7.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/emotion-random/9.wav" controls></audio>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <audio src="paper3_demos/emotion-random/11.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/emotion-random/13.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/emotion-random/14.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/emotion-random/32.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/emotion-random/17.wav" controls></audio>
+            </th>
+        </tr>
+    </Table>
+    <div style="padding-top:16px;color: #aaaaaa">
+        <i>Synthesized text: 我是情感随机采样的测试文本。</i>
+    </div>
 
 </div>
 
