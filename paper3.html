@@ -88,6 +88,17 @@
                     </ol>
                 </ol>
                 <li style="font-size: 18px"><a href="#Possible_products_preview">Possible products preview (coming soon)</a></li>
+                <ol>
+                    <li>
+                        <a href="#ppp_Expressive">1 Expressive TTS</a>
+                    </li>
+                    <li>
+                        <a href="#ppp_Emotional">2 Emotional TTS</a>
+                    </li>
+                    <li>
+                        <a href="#ppp_Customization">3 Customization TTS</a>
+                    </li>
+                </ol>
             </ul>
         </div>
     </div>
@@ -103,8 +114,9 @@
     </h4>
     <div style="padding-top:16px;">
         Compare the performance of non-parallel (text contents of source and target are irrelevant) style transfer between the original model and ours (intercross).
-        Reference audios are randomly chosen from a same speaker. These demos are corresponding to Figure 5 in the paper.
+        Reference audios are randomly chosen from a same speaker.
     </div>
+    <div>These demos are corresponding to Figure 5 in our paper.</div>
     <!--<h5 style="padding-top:16px;"> Original vs. Intercross</h5>-->
     <Table style="padding-top:16px;">
         <tr>
@@ -250,8 +262,8 @@
     <div style="padding-top:16px;">
         We reuse the reference audios of speaker1 and speaker4 in above experiments.
         Then we conduct linear interpolation between them, introduced in Section 2.5 in our paper.
-        These demos are corresponding to Figure 6 in the paper.
     </div>
+    <div>These demos are corresponding to Figure 6 in the paper.</div>
     <Table style="padding-top:16px;">
         <tr>
             <th></th>
@@ -525,16 +537,17 @@
         We define 5 prosodies by different speaking scenes: news, story, radio, poetry, call-center.
         We briefly conclude their features as follows.
     </div>
-    <div>news: relative fast; formal.</div>
-    <div>story: many transitions and breaks.</div>
-    <div>radio: relative slow; deep and attractive voice.</div>
-    <div>poetry: slow; obeys rules of rhyming.</div>
-    <div>call-center: relative fast; sweet;</div>
+    <div style="padding-top:16px;text-indent:2em;">news: relative fast; formal.</div>
+    <div style="text-indent:2em;">story: many transitions and breaks.</div>
+    <div style="text-indent:2em;">radio: relative slow; deep and attractive voice.</div>
+    <div style="text-indent:2em;">poetry: slow; obeys rules of rhyming.</div>
+    <div style="text-indent:2em;">call-center: relative fast; sweet;</div>
     <div class="someTab">
         <div style="padding-top:16px;">
-        We conduct parallel multi-styles control. As table 1 in paper shows, speaker F17 and speaker M5 both have style
-            news and radio. Intuitively, we generates audios according to following equations.
+        We conduct parallel multi-styles control. As table 1 in our paper shows, speaker F17 and speaker M5 both have style
+            news and radio.
         </div>
+        <div>Formally, we generates audios according to following equations.</div>
         <div style="text-indent:30em;">speaker = F17 + α <sub style="font-size:1px">1</sub> * (M5 - F17)</div>
         <div style="text-indent:30em;">prosody = Radio + α <sub style="font-size:1px">2</sub> * (News - Radio)</div>
         <div>These demos are corresponding to Figure 8(a) in the paper.</div>
@@ -646,10 +659,10 @@
         </div>
 
         <div style="padding-top:16px;">
-        We conduct non-parallel multi-styles control. As table 1 in paper shows, speaker F4 only has style call-center and speaker
+        We conduct non-parallel multi-styles control. As table 1 in our paper shows, speaker F4 only has style call-center and speaker
             M2 only has style poetry. And we are going to generate non-existent styles for the speakers.
-            Intuitively, we generates audios according to following equations.
         </div>
+        <div>Formally, we generates audios according to following equations.</div>
         <div style="text-indent:30em;">speaker = M2 + α <sub style="font-size:1px">1</sub> * (F4 – M2)</div>
         <div style="text-indent:30em;">prosody = poetry + α <sub style="font-size:1px">2</sub> * (callcenter - poetry)</div>
         <div>These demos are corresponding to Figure 8(b) in the paper.</div>
@@ -788,10 +801,10 @@
 
 <!-- Part 3: Extra Experiments -->
 <div>
-    <h2 style="padding-top:16px;"><a name="Extra_experiments">Extra experiments (coming soon)</a></h2>
+    <h2 style="padding-top:16px;"><a name="Extra_experiments">Extra experiments</a></h2>
 
     <h3 style="padding-top:16px;"><a name="Emotion">1 Emotion</a></h3>
-    <h4 style="padding-top:16px;"><a name="Style_controlEE">1.1 Style control</a></h4>
+    <h4 style="padding-top:16px;"><a name="Style_controlEE">1.1 Style control (coming soon)</a></h4>
     <h4 style="padding-top:16px;"><a name="Random_samplingEE">1.2 Random sampling</a></h4>
     <div style="padding-top:16px;">
         Similar to speaker random sampling, we conduct emotion random sampling and present demos here.
@@ -840,7 +853,76 @@
 
 <!-- Part 4: Possible Products Preview -->
 <div>
-    <h2 style="padding-top:16px;"><a name="Possible_products_preview">Possible products preview (coming soon)</a></h2>
+    <h2 style="padding-top:16px;"><a name="Possible_products_preview">Possible products preview</a></h2>
+
+    <h3 style="padding-top:16px;"><a name="ppp_Expressive">1 Expressive TTS</a></h3>
+    <div style="padding-top:16px;">
+        Adjusting the synthesis prosody to fit the text content will significantly improve its performance.
+    </div>
+    <div>
+        Following demos are synthesized using the same speaker and different prosodies.
+    </div>
+    <Table style="padding-top:16px;">
+        <tr>
+            <th>News</th>
+            <th>Poetry</th>
+            <th>Radio</th>
+        </tr>
+        <tr>
+            <th>
+                <audio src="paper3_demos/product-prosody/news.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/product-prosody/poetry.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/product-prosody/radio.wav" controls></audio>
+            </th>
+        </tr>
+    </Table>
+
+    <h3 style="padding-top:16px;"><a name="ppp_Emotional">2 Emotional TTS (coming soon)</a></h3>
+
+    <h3 style="padding-top:16px;"><a name="ppp_Customization">3 Customization TTS</a></h3>
+    <div style="padding-top:16px;">
+        Everyone can have their own synthesized voice using one-shot/few-shot.
+        Thanks to our PMs for providing many recodings for testing.
+    </div>
+    <div>
+        We present 2 ground-truth voices and 2 synthesized voice for each speaker. Try to distinguish them.
+    </div>
+    <Table style="padding-top:16px;">
+        <tr>
+            <th>speaker1</th>
+            <th>
+                <audio src="paper3_demos/product-custom/speaker1/groundtruth-1.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/product-custom/speaker1/synthesized-1.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/product-custom/speaker1/groundtruth-2.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/product-custom/speaker1/synthesized-2.wav" controls></audio>
+            </th>
+        </tr>
+        <tr>
+            <th>speaker2</th>
+            <th>
+                <audio src="paper3_demos/product-custom/speaker1/groundtruth-1.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/product-custom/speaker1/synthesized-1.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/product-custom/speaker1/groundtruth-2.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/product-custom/speaker1/synthesized-2.wav" controls></audio>
+            </th>
+        </tr>
+    </Table>
 </div>
 </body>
 
