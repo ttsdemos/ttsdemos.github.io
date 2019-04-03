@@ -73,7 +73,7 @@
                         </li>
                     </ol>
                 </ol>
-                <li style="font-size: 18px"><a href="#Extra_experiments">Extra experiments (coming soon)</a></li>
+                <li style="font-size: 18px"><a href="#Extra_experiments">Extra experiments</a></li>
                 <ol>
                     <li>
                         <a href="#Emotion">1 Emotion</a>
@@ -87,16 +87,13 @@
                         </li>
                     </ol>
                 </ol>
-                <li style="font-size: 18px"><a href="#Possible_products_preview">Possible products preview (coming soon)</a></li>
+                <li style="font-size: 18px"><a href="#Possible_products_preview">Possible products preview</a></li>
                 <ol>
                     <li>
                         <a href="#ppp_Expressive">1 Expressive TTS</a>
                     </li>
                     <li>
-                        <a href="#ppp_Emotional">2 Emotional TTS</a>
-                    </li>
-                    <li>
-                        <a href="#ppp_Customization">3 Customization TTS</a>
+                        <a href="#ppp_Customization">2 Customization TTS</a>
                     </li>
                 </ol>
             </ul>
@@ -804,7 +801,132 @@
     <h2 style="padding-top:16px;"><a name="Extra_experiments">Extra experiments</a></h2>
 
     <h3 style="padding-top:16px;"><a name="Emotion">1 Emotion</a></h3>
-    <h4 style="padding-top:16px;"><a name="Style_controlEE">1.1 Style control (coming soon)</a></h4>
+    <h4 style="padding-top:16px;"><a name="Style_controlEE">1.1 Style control</a></h4>
+    <div style="padding-top:16px;">
+        Similar to speaker control, we conduct emotion control and present demos here.
+    </div>
+    <Table style="padding-top:16px;">
+        <tr>
+            <th></th>
+            <th>speaker1, α = 0.0</th>
+            <th>α = 0.3</th>
+            <th>α = 0.5</th>
+            <th>α = 0.7</th>
+            <th>speaker4, α = 1.0</th>
+        </tr>
+        <tr>
+            <th>Neutral-happy</th>
+            <th>
+                <audio src="paper3_demos/emotion-interp/neutral-happy/wave/1_0.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/emotion-interp/neutral-happy/wave/4_0.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/emotion-interp/neutral-happy/wave/6_0.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/emotion-interp/neutral-happy/wave/8_0.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/emotion-interp/neutral-happy/wave/11_0.wav" controls></audio>
+            </th>
+        </tr>
+        <tr>
+            <th>Happy-angry</th>
+            <th>
+                <audio src="paper3_demos/emotion-interp/happy-angry/wave/1_0.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/emotion-interp/happy-angry/wave/4_0.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/emotion-interp/happy-angry/wave/6_0.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/emotion-interp/happy-angry/wave/8_0.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/emotion-interp/happy-angry/wave/11_0.wav" controls></audio>
+            </th>
+        </tr>
+        <tr>
+            <th>Angry-confuse</th>
+            <th>
+                <audio src="paper3_demos/emotion-interp/angry-confused/wave/1_0.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/emotion-interp/angry-confused/wave/4_0.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/emotion-interp/angry-confused/wave/6_0.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/emotion-interp/angry-confused/wave/8_0.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/emotion-interp/angry-confused/wave/11_0.wav" controls></audio>
+            </th>
+        </tr>
+        <tr>
+            <th>Confuse-sad</th>
+            <th>
+                <audio src="paper3_demos/emotion-interp/confused-sad/wave/1_0.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/emotion-interp/confused-sad/wave/4_0.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/emotion-interp/confused-sad/wave/6_0.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/emotion-interp/confused-sad/wave/8_0.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/emotion-interp/confused-sad/wave/11_0.wav" controls></audio>
+            </th>
+        </tr>
+        <tr>
+            <th>Sad-surprise</th>
+            <th>
+                <audio src="paper3_demos/emotion-interp/sad-surprise/wave/1_0.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/emotion-interp/sad-surprise/wave/4_0.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/emotion-interp/sad-surprise/wave/6_0.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/emotion-interp/sad-surprise/wave/8_0.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/emotion-interp/sad-surprise/wave/11_0.wav" controls></audio>
+            </th>
+        </tr>
+        <tr>
+            <th>Surprise-fear</th>
+            <th>
+                <audio src="paper3_demos/emotion-interp/surprise-fear/wave/1_0.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/emotion-interp/surprise-fear/wave/4_0.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/emotion-interp/surprise-fear/wave/6_0.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/emotion-interp/surprise-fear/wave/8_0.wav" controls></audio>
+            </th>
+            <th>
+                <audio src="paper3_demos/emotion-interp/surprise-fear/wave/11_0.wav" controls></audio>
+            </th>
+        </tr>
+    </Table>
+    <div style="padding-top:16px;color: #aaaaaa">
+        <div><i>Text: 同学们欣喜若狂，全都兴高采烈地欢呼起来。</i></div>
+    </div>
+
     <h4 style="padding-top:16px;"><a name="Random_samplingEE">1.2 Random sampling</a></h4>
     <div style="padding-top:16px;">
         Similar to speaker random sampling, we conduct emotion random sampling and present demos here.
@@ -855,12 +977,14 @@
 <div>
     <h2 style="padding-top:16px;"><a name="Possible_products_preview">Possible products preview</a></h2>
 
+    <div style="padding-top:16px;">
+        There are too many applications of our model to show. We list some of what we are working on.
+    </div>
+
     <h3 style="padding-top:16px;"><a name="ppp_Expressive">1 Expressive TTS</a></h3>
     <div style="padding-top:16px;">
-        Adjusting the synthesis prosody to fit the text content will significantly improve its performance.
-    </div>
-    <div>
-        Following demos are synthesized using the same speaker and different prosodies.
+        Adjusting the synthesis prosodies to fit the text contents will significantly improve the performance. Following demos are synthesized using the same speaker and different prosodies.
+        Furthermore, giving different style embeddings during synthesizing each sentence, we can obtain audios with various styles to implement role-play TTS.
     </div>
     <Table style="padding-top:16px;">
         <tr>
@@ -881,15 +1005,13 @@
         </tr>
     </Table>
 
-    <h3 style="padding-top:16px;"><a name="ppp_Emotional">2 Emotional TTS (coming soon)</a></h3>
-
-    <h3 style="padding-top:16px;"><a name="ppp_Customization">3 Customization TTS</a></h3>
+    <h3 style="padding-top:16px;"><a name="ppp_Customization">2 Customization TTS</a></h3>
     <div style="padding-top:16px;">
-        Everyone can have their own synthesized voice using one-shot/few-shot.
+        Everyone can have their own synthesized voices using one-shot/few-shot.
         Thanks to our PMs for providing many recodings for testing.
     </div>
     <div>
-        We present 2 ground-truth voices and 2 synthesized voice for each speaker. Try to distinguish them.
+        We present 2 ground-truth voices and 2 synthesized voices for each speaker. Try to distinguish them.
     </div>
     <Table style="padding-top:16px;">
         <tr>
@@ -923,6 +1045,7 @@
             </th>
         </tr>
     </Table>
+
 </div>
 </body>
 
